@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    /* background-color: #00203f; */
+}
+.profile-photo{
+    display: flex;
+    flex-direction: row;
+     padding-top: 200px;
+     padding-bottom: 210px;
+    justify-content: center;
+    align-items: center;
+    background-color: #00203f;
+    height: 100%;
+}
+.profile-photo img{
+    max-width: 500px;
+    width: 350px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin: 20px ;
+    margin-left: 15rem;
+    height: 300px;
+}
+/* .elon{
+    display: flex;
+    flex-direction: column;
+}
+.elon-para{
+    display: flex;
+    flex-direction: column;
+} */
+
+.header{
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    width: 850px;
+    margin: auto;
+}
+.header h1{
+    color: white;
+}
+.header p{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-style: italic;
+}
+.btn-pink{
+    background-color: #e84949;
+    color: black;
+    width: fit-content;
+    padding: 0.8rem 2.2rem;
+    font-size: 18px;
+    box-shadow: 5px 7px 5px #00003f;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 20PX;
+    text-decoration: none;
+}
+.btn-pink::before{
+    content: "";
+    background-color:#fff;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: left;
+    z-index: -1;
+    transition: 0.8s;
+}
+.btn-pink:hover::before{
+    transform: scaleX(1);
+    cursor: pointer;
+}
+.btn-pink:hover{
+    border: solid 3px #e84949
+}
+#btn-bottom{
+    display: none;
+}
+.education-header{
+    font-weight: bold;
+    text-align: center;
+    background-color: #fff;
+   
+    margin-top: 50px;
+   
+}
+.header-second{
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%;
+}
+.early{
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-shadow: 0cqmax;
+}
+
+.left-photo{
+    /* display: flex;
+    flex-direction: row; */
+    padding: 30px;
+    
+
+}
+.right-para-section{
+    /* display: flex;
+    flex-direction: row; */
+    margin-top: 30px;
+    width: fit-content;
+    margin-right: 80px;
+    font-style: italic;
+    font-size: large;
+    line-height: 40px;
+}
+.gap{
+    margin-left: 20px;
+}
